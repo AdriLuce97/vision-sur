@@ -4,56 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!--css-->
     <link rel="stylesheet" href="../css/style.css">
     <title>Vision Sur</title>
 </head>
 <body>
     <header>
-        <nav>
-            <div>
-            <a href="../index.html"><img src="../img/sudamerica.png" alt="logoVisionSur" class="planetita"><h1 class="alindex">Vision Sur <br>Telecomunicaciones</h1></a>
-            </div>
-            
-            <div>
-                <ul>
-                <li class="contacto"><a href="#contacto">CONTACTO</a></li>
-                <li class="soporte"><a href="https://web.whatsapp.com" target="_blank">SOPORTE</a></li>
-                </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-info">
+            <div class="container-fluid">
+                <a href="../index.html"><img src="../img/sudamerica.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="../index.html" class="nav-link active" aria-current="page" href="#">Vision Sur<br>Telecomunicaciones</a>
+                        </li>
+                    </ul>
+                    <ul class="btn-com">
+                        <li>
+                            <a href="#contacto"><button class="btn btn-outline-secondary">CONTACTO</button></a>
+                        </li>
+                        <li>
+                            <a href="https://web.whatsapp.com" target="_blank"><button class="btn btn-outline-secondary">SOPORTE</button></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
     <main>
-        <section class="hero">
-            <h2> PASATE A FIBRA Y NOTA LA DIFERENCIA</h2>
-            <p>Comentanos la situacion y necesidades de tu empresa y nos vamos a estar comunicando con vos para ofrecerte soluciones</p>
+        <section class="heroCorp">
+            <div>
+                <h2> PASATE A FIBRA Y NOTA LA DIFERENCIA<br>CONOCE LO QUE ES LA VERDADERA VELOCIDAD DE INTERNET</h2>
+                <p>Comentanos la situacion y necesidades de tu empresa y nos vamos a estar comunicando con vos para ofrecerte soluciones</p>
+            </div>
             <form action="" method="" enctype="">
-                <div>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" name="Nombre" id="nombre">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Nombre completo:</label>
                 </div>
-                <div>
-                    <label for="apellido">Apellido</label>
-                    <input type="text" name="Apellido" id="apellido">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">email:</label>
                 </div>
-                <div>
-                    <label for="telefono">Telefono</label>
-                    <input type="text" name="Telefono" id="telefono">
+                <div class="form-floating">
+                    <input type="email" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Telefono</label>
                 </div>
-                <div>
-                    <label for="correo electronico">Correo electronico</label>
-                    <input type="email" name="Correo electronico" id="correo electronico">
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Mensaje</label>
                 </div>
-                    <label for="mensaje">Mensaje</label>
-                    <input type="" name="Mensaje" id="mensaje">
-                <div>
-                    <input type="submit">
-                </div>
-        </section>
-        <section class="comentarioCorporativo">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam eius, nemo deserunt aliquam odit sequi doloribus. Eaque animi possimus perspiciatis itaque nobis. Repellendus architecto esse dolorum rem. Quia in harum nemo, quas ducimus illum ipsam maiores iure quibusdam! Excepturi veniam suscipit sapiente. Aperiam, necessitatibus quisquam, sequi fugit facere nihil beatae odit, veritatis vero facilis at cum aut maxime iure.</p>
+                <input class="btn btn-primary" type="submit" value="Submit">
         </section>
     </main>
-    
     <footer id="contacto">
         <div>
             <a href="https://www.afip.gob.ar/landing/default.asp" target="_blank"><img src="../img/qrafip.jpg" alt="qr afip"></a>
@@ -67,14 +77,15 @@
             <a href="mailto:adrian.9708@gmail.com">e-mail</a>
         </div>
         <div>
-            <a href="">Servicio tecnico</a>
+            <a href="https://web.whatsapp.com">Servicio tecnico</a>
         </div>
         <div>
-            <a href="">Reclamos</a>
+            <a href="https://web.whatsapp.com">Reclamos</a>
         </div>
         <div>
-            <a href="">Informar un error</a>
+            <a href="mailto:adrian.9708@gmail.com?Subject=Informe%20de%20error%20en%20la%20pagina">Informar un error</a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
