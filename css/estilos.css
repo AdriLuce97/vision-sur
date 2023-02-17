@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*---HEADER----*/
+header nav div a img {
+  width: 100px;
+  height: 100px; }
+
+header nav div div ul .active {
+  text-align: center;
+  font-family: 'Crimson Text', serif;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0px; }
+
+.btn-com {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  display: flex;
+  font-weight: bold; }
+
+/*---MAIN----*/
+main .hero {
+  color: white;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 70vh;
+  background-attachment: fixed;
+  background-image: url("../img/space.jpg");
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
+main .planes {
+  background-color: #c8c8c8;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+  main .planes .flexboxPlanes {
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 3.5em;
+    font-weight: bold; }
+  main .planes div {
+    border: 5px solid grey;
+    padding: 10px;
+    border-radius: 25px;
+    width: 250px;
+    height: 350px;
+    margin: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 5px 10px 15px 15px #888888; }
+    main .planes div:hover {
+      background-color: #9defef;
+      transition: 0.8s; }
+    main .planes div a {
+      text-decoration: double;
+      color: grey;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: bold;
+      background-color: skyblue;
+      padding: 3px 10px;
+      border-radius: 50px; }
+    main .planes div img {
+      width: 140px;
+      height: 140px; }
+
+main section .sobreNosotros {
+  background-image: url("../img/fondo2.jpg");
+  background-position: center;
+  height: 100%;
+  height: 50vh;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: right;
+  font-size: 28px;
+  color: gainsboro;
+  padding: 60px; }
+
+main .galeria h2 {
+  background-color: #c8c8c8;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: grey;
+  font-weight: bold;
+  font-size: 45px;
+  text-align: center;
+  padding: 30px; }
+
+main .galeria .galeriaGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 450px;
+  gap: 15px; }
+  main .galeria .galeriaGrid div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 2px 12px 15px 12px rgba(0, 99, 99, 0.71);
+    -webkit-box-shadow: 2px 12px 15px 12px rgba(0, 99, 99, 0.71);
+    -moz-box-shadow: 2px 12px 15px 12px rgba(0, 99, 99, 0.71); }
+
+main .heroContra {
+  background-image: url("../img/space.jpg");
+  background-attachment: fixed;
+  height: 80vh;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
+main .heroCorp {
+  background-image: url(../img/space.jpg);
+  height: 80vh; }
+  main .heroCorp p {
+    color: aliceblue;
+    font-size: 25px;
+    text-align: center; }
+
+main h2 {
+  font-size: 60px;
+  color: whitesmoke;
+  text-align: center; }
+
+main h3 {
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold; }
+
+main h4 {
+  font-size: 19px;
+  margin: 0px;
+  border: 0px;
+  font-weight: bold; }
+
+main .aviso {
+  background-color: grey;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  padding: 60px; }
+
+main .img1 {
+  grid-area: span 3; }
+
+/*----FOOTER----*/
+footer {
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px;
+  border: 10px;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  flex-wrap: wrap;
+  gap: 2em;
+  text-decoration: none;
+  align-self: flex-end; }
+  footer div {
+    margin: 3px;
+    padding: 10px;
+    border: 20px; }
+    footer div a {
+      font-style: none; }
+      footer div a img {
+        width: 70px;
+        height: 100px;
+        margin: 25px; }
+  footer img {
+    height: 100px; }
+
+@media screen and (max-width: 950px) {
+  main .galeria .galeriaGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 220px; }
+    main .galeria .galeriaGrid div .img2 {
+      grid-area: span 2; } }
+
+@media screen and (max-width: 450px) {
+  main .hero p {
+    font-size: 25px;
+    text-align: center; }
+  main section .sobreNosotros {
+    font-size: 15px; }
+  main section .galeriaGrid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 220px; }
+  footer {
+    flex-direction: column; }
+    footer img {
+      height: 30vh; }
+    footer div a img {
+      height: 30vh;
+      width: 120px; }
+  h2 {
+    font-size: 30px;
+    text-align: center; } }
